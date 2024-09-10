@@ -5,12 +5,9 @@ public class NumberGuessingGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-
-        // Define the range
         int lowerBound = 1;
         int upperBound = 100;
 
-        // Generate a random number within the range
         int targetNumber = random.nextInt(upperBound - lowerBound + 1) + lowerBound;
 
         System.out.println("Welcome to the Number Guessing Game!");
@@ -19,8 +16,6 @@ public class NumberGuessingGame {
 
         int guess;
         int attempts = 0;
-
-        // Loop until the user guesses correctly
         while (true) {
             System.out.print("Enter your guess: ");
             guess = scanner.nextInt();
